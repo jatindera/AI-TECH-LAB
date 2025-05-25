@@ -1,0 +1,55 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Environment & secrets
+.env
+.env.*
+
+# Build / distribution
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+*.manifest
+
+# Packaging
+*.tar.gz
+*.whl
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# VSCode project settings
+.vscode/
+
+# pytest & test coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Jupyter notebooks checkpoint files
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# uv-specific cache (if used)
+.uv/
