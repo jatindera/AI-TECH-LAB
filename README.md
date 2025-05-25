@@ -1,6 +1,4 @@
-=========================
-AI Tech Lab - Getting Started
-=========================
+# ***** AI Tech Lab - Getting Started *****
 
 This workspace is a curated collection of structured learning paths, experiments, and agent-based projects using:
 
