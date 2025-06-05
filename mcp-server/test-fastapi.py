@@ -11,7 +11,7 @@ load_dotenv(find_dotenv())
 # Take the FastAPI app only as a source for MCP server generation
 mcp = FastApiMCP(
     app,
-    name = "MCPWeatherApp",
+    name = "MCP Implementation",
     describe_all_responses=True,
     describe_full_response_schema=True
     )
@@ -20,7 +20,7 @@ mcp.mount()
 
 # Define a tool for getting weather
 @app.post("/get-weather", operation_id="get_weather")
-async def get_weather(city: str) -> str:
+def get_weather(city: str) -> str:
     """Get the current weather for a city"""
     # Mock weather data (replace with a real API in production)
     conditions = ["sunny", "cloudy", "rainy", "snowy"]
@@ -30,7 +30,7 @@ async def get_weather(city: str) -> str:
 # Add another tool for forecast
 
 @app.post("/weather-forecast", operation_id="weather_forecast")
-async def get_forecast(city: str, days: int) -> str:
+def get_forecast(city: str, days: int) -> str:
     """Get a weather forecast for the next few days"""
     conditions = ["sunny", "cloudy", "rainy", "snowy"]
     forecast = [random.choice(conditions) for _ in range(days)]
@@ -45,8 +45,7 @@ if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)
 
 
-
-# from fastmcp import FastMCP
+#     from fastmcp import FastMCP
 # import random
 
 # # Initialize the MCP server

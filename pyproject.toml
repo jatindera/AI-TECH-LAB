@@ -5,9 +5,11 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "fastapi-mcp>=0.3.4",
     "fastapi[standard]>=0.115.12",
     "fastmcp>=2.5.1",
     "google-adk>=1.0.0",
+    "mcp>=1.9.1",
     "pyodbc>=5.2.0",
     "python-dotenv>=1.1.0",
     "sqlalchemy>=2.0.41",

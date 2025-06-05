@@ -34,7 +34,7 @@ source .venv/bin/activate
 ## 4. Change Directory to the MCP Server
 
 ```bash
-cd mcp-protocol/mcp-server
+cd mcp-server
 ```
 
 ## 5. Run the Weather Server
